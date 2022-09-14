@@ -7,7 +7,7 @@ if(num%i==0){
 count++
 }
 }
-if(count=1){
+if(count==2){
 console.log("yes")
 }else{
 console.log("no")
@@ -15,4 +15,12 @@ console.log("no")
 
 //palindrome
 let str="naman"
-for(let i=0;i<str.length;i++){
+let bag='';
+for(let i=str.length-1;i>=0;i--){
+    bag+=str[i]
+}
+if(bag==str){
+    console.log('Palindrome')
+}else{
+    console.log('Not a paLindrome')
+}
